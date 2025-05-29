@@ -29,25 +29,30 @@
 
   <!-- About Section -->
   <section id="about">
-    <div class="container">
-      <h2>About Me</h2>
-		<p>
-		  I’m a passionate Unity Junior Developer with over 2 years of experience creating interactive games and applications. 
-		  I have a <strong>Unity Certified User: Programmer</strong> certification, and I am currently pursuing the 
-		  <strong>Unity Certified Associate: Programmer</strong> credential with <strong>SitaraX</strong>.
-			I am CS (Bachelor) and AI (Master), so my intrest was focused on utilizing Unity 3D features on my research and real-world problems.
-		  I specialize in building immersive, performance-driven experiences and have developed a variety of games, including 2D platformers, 3D endless runners, RPGs, and small simulators (cars, planes, etc.). 
-		  These projects are designed to teach students the fundamentals of game development in an engaging and accessible way, in which some of them are not perfectly completed.
-		</p>
-		<p>
-		  I don’t just create games for fun — I am deeply interested in <strong>Serious Games</strong>, 
-		  <strong>Educational Games</strong>, and <strong>Simulation Environments</strong> that contribute to learning, research, and human advancement.
-		  I’m eager to collaborate with others in this field to harness the power of game technology to drive innovation in 
-		  <strong>Computer Science</strong> and <strong>Artificial Intelligence</strong>.
-		</p>
+  <style>
+    #about p {
+      text-align: justify;
+    }
+  </style>
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate Unity Junior Developer with over 2 years of experience creating interactive games and applications. 
+      I have a <strong>Unity Certified User: Programmer</strong> certification, and I am currently pursuing the 
+      <strong>Unity Certified Associate: Programmer</strong> credential with <strong>SitaraX</strong>.
+      I am CS (Bachelor) and AI (Master), so my intrest was focused on utilizing Unity 3D features on my research and real-world problems.
+      I specialize in building immersive, performance-driven experiences and have developed a variety of games, including 2D platformers, 3D endless runners, RPGs, and small simulators (cars, planes, etc.). 
+      These projects are designed to teach students the fundamentals of game development in an engaging and accessible way, in which some of them are not perfectly completed.
+    </p>
+    <p>
+      I don’t just create games for fun — I am deeply interested in <strong>Serious Games</strong>, 
+      <strong>Educational Games</strong>, and <strong>Simulation Environments</strong> that contribute to learning, research, and human advancement.
+      I’m eager to collaborate with others in this field to harness the power of game technology to drive innovation in 
+      <strong>Computer Science</strong> and <strong>Artificial Intelligence</strong>.
+    </p>
+  </div>
+	</section>
 
-    </div>
-  </section>
 
   <!-- Featured Projects Section -->
   <section id="projects">
