@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Israa Saleh - Junior Game Developer - Certified Unity User Programmer</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Israa Saleh</h1>
+      <p>Junior Game Developer - Certified Unity User Programmer</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#game-gallery">Game Gallery</a>
+        <a href="#video-gallery">Game Trailers</a>
+        <a href="#contact">Contact</a>
+      </nav>
+	  <img src="images/UnityUserCertifiedBadge.png" alt="Unity Certified User Badge" class="cert-badge">
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+  <style>
+    #about p {
+      text-align: justify;
+    }
+  </style>
+  <div class="container">
+    <h2>About Me</h2>
+    <p>
+      I’m a passionate Unity Junior Developer with over 2 years of experience creating interactive games and applications. 
+      I have a <strong>Unity Certified User: Programmer</strong> certification, and I am currently pursuing the 
+      <strong>Unity Certified Associate: Programmer</strong> credential with <strong>SitaraX</strong>.
+      I am CS (Bachelor) and AI (Master), so my intrest was focused on utilizing Unity 3D features on my research and real-world problems.
+      I specialize in building immersive, performance-driven experiences and have developed a variety of games, including 2D platformers, 3D endless runners, RPGs, and small simulators (cars, planes, etc.). 
+      These projects are designed to teach students the fundamentals of game development in an engaging and accessible way, in which some of them are not perfectly completed.
+    </p>
+    <p>
+      I don’t just create games for fun — I am deeply interested in <strong>Serious Games</strong>, 
+      <strong>Educational Games</strong>, and <strong>Simulation Environments</strong> that contribute to learning, research, and human advancement.
+      I’m eager to collaborate with others in this field to harness the power of game technology to drive innovation in 
+      <strong>Computer Science</strong> and <strong>Artificial Intelligence</strong>.
+    </p>
+  </div>
+	</section>
+
+
+  <!-- Featured Projects Section -->
+  <section id="projects">
+    <div class="container">
+      <h2>Featured Projects</h2>
+		
+      <div class="project">
+        <h3>Quad Action – 3D game</h3>
+        <p><strong>Role:</strong> Solo Developer</p>
+        <p><strong>Tech:</strong> Unity 2021, C#, AI NavMesh</p>
+        <p><strong>Demo:</strong> <a href="https://play.unity.com/en/games/f750c99a-feee-4e28-b6f2-69b62bb3a0c6/quad-action-512-version-01" target="_blank">Play in Browser</a></p>
+		<img src="https://play.unity.com/_next/image?url=https%3A%2F%2Fplay.unity.com%2Fapi%2Fv1%2Ffiles%2Ffile%2Fe962bcef-685f-4b4d-be3d-b43609fbbe73%2Fcontent&w=1080&q=75" alt="QuadAction Screenshot">
+      </div>
+	  <div class="project">
+        <h3>Knights of Eledor - 3D Medieval Game</h3>
+        <p><strong>Role:</strong> Solo Developer</p>
+        <p><strong>Tech:</strong> Unity 2021, C#, AI NavMesh</p>
+        <p><strong>Demo:</strong> <a href="https://play.unity.com/en/games/80c439af-a5d8-4a11-87ab-7f8af7d1bc5f/knights-of-eledor" target="_blank">Play in Browser</a></p>
+		<img src="C:\Users\dell\Documents\MyPortfoilo\images\screenshots\Screenshot08.png" alt="BE 2 Screenshot">
+      </div>
+	  <div class="project">
+        <h3>BE 2 Game - 2D Platformer</h3>
+        <p><strong>Role:</strong> Solo Developer</p>
+        <p><strong>Tech:</strong> Unity 2021, C#</p>
+        <p><strong>Demo:</strong> <a href="https://play.unity.com/en/games/ec21a674-68d2-40a3-95a4-ec48d5b4b793/be-2-game-v01" target="_blank">Play in Browser</a></p>
+		<img src="C:\Users\dell\Documents\MyPortfoilo\images\screenshots\Screenshot26.png" alt="BE 2 Screenshot">
+      </div>
+	  
+    </div>
+  </section>
+
+  <!-- Game Gallery Section (Horizontal Scroll) -->
+  <section id="game-gallery">
+    <div class="container">
+	
+      <h2>Game Gallery</h2>
+      <div class="gallery-wrapper">
+        <!-- Left Arrow -->
+
+        <!-- Gallery -->
+
+		<div class="gallery"></div>
+
+        <!-- Right Arrow -->
+
+      </div>
+    </div>
+  </section>
+
+    <!-- Game Trailers Video Gallery Section -->
+  <section id="video-gallery">
+    <div class="container">
+      <h2>Game Trailers</h2>
+      <div class="gallery-wrapper">
+        <!-- Left Arrow for video gallery -->
+        <button class="arrow left-arrow" onclick="scrollGallery('left')">
+          <i class="fas fa-chevron-left"></i>
+        </button>
+        <!-- Video Gallery -->
+        <div class="video-gallery">
+          
+        </div>
+        <!-- Right Arrow for video gallery -->
+        <button class="arrow right-arrow" onclick="scrollGallery('right')">
+          <i class="fas fa-chevron-right"></i>
+        </button>
+		
+
+      </div>
+    </div>
+  </section>
+  <!-- Lightbox Modal -->
+  <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+    <div class="lightbox-content">
+      <img id="lightbox-image" src="" alt="Zoomed Image">
+    </div>
+  </div>
+
+  <section id="skills">
+    <div class="container">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Engines & Tools:</strong> Unity (2D, 3D), ML-Agents, AI NavMesh, Blender <strong>3D</strong> & Krita <strong>2D</strong> (intermediate), Git</li>
+        <li><strong>Programming:</strong> Python, C#(intermediate), C++, JAVA, Web Dev</li>
+        <li><strong>Specializations:</strong> Gameplay Programming, Optimization, Game Design, AI on Games</li>
+		<li><strong>Publishing on:</strong> Unity Play, itech.o, GitHub</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Let’s build something amazing together!</p>
+      <ul>
+        <li>📧 <strong>Email:</strong> israasaleh15124@gmail.com, israadocs@gmail.com</li>
+        <li>🐙 <strong>GitHub:</strong> <a href="https://github.com/Israa-Saleh" target="_blank">Israa-Saleh</a></li>
+		<li>🧊 <strong>Unity Play:</strong> <a href="https://play.unity.com/en/user/57deb161-c04f-42f9-aeda-bbfe25a141f1" target="_blank">Israa-Saleh-15124</a></li>
+		<li>🎮 <strong>Discord:</strong> esraasaleh_43643</li>
+
+      </ul>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Israa Saleh. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript for gallery scrolling and lightbox -->
+  <script>
+    // Function for scrolling the gallery left or right
+    function scrollGallery(direction) {
+      const gallery = document.querySelector('.gallery');
+      const videoGallery = document.querySelector('.video-gallery');
+      const scrollAmount = 300; // Amount to scroll by
+
+      if (direction === 'left') {
+        gallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        videoGallery.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+      } else if (direction === 'right') {
+        gallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        videoGallery.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+      }
+    }
+
+    // Function to open the image in a lightbox
+    function openLightbox(element) {
+      const imageSrc = element.querySelector('img').src;
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      
+      lightboxImage.src = imageSrc;  // Set the source of the lightbox image
+      lightbox.style.display = 'flex';  // Show the lightbox
+
+      // Add zoom effect after the lightbox is displayed
+      setTimeout(() => {
+        lightboxImage.style.transform = 'scale(1.7)';  // Zoom image by 70%
+      }, 50); // Add a slight delay to ensure the lightbox shows up first
+    }
+
+    // Function to close the lightbox
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      const lightboxImage = document.getElementById('lightbox-image');
+      
+      lightbox.style.display = 'none';  // Hide the lightbox when clicked outside
+      lightboxImage.style.transform = 'scale(1)';  // Reset zoom when closing the lightbox
+    }
+  </script>
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector(".gallery");
+    const totalImages = 27; // Update if more are added
+    const folder = "images/screenshots/";
+    const extension = ".png";
+
+    for (let i = 1; i <= totalImages; i++) {
+      const number = i.toString().padStart(2, '0'); // adds leading 0s like 01, 02
+      const imageName = `Screenshot${number}${extension}`;
+
+      const div = document.createElement("div");
+      div.classList.add("game-image");
+      div.setAttribute("onclick", "openLightbox(this)");
+
+      const img = document.createElement("img");
+      img.src = folder + imageName;
+      img.alt = `Screenshot ${i}`;
+
+      div.appendChild(img);
+      gallery.appendChild(div);
+    }
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const gallery = document.querySelector('.gallery');
+    const scrollStep = 1.5;         // smooth step
+    const delay = 10;               // ms delay
+    const buffer = 2;               // how close to edge triggers reverse
+    let direction = 1;              // 1 = right, -1 = left
+
+    setInterval(() => {
+      gallery.scrollLeft += scrollStep * direction;
+
+      // Reverse at right end
+      if (gallery.scrollLeft + gallery.clientWidth >= gallery.scrollWidth - buffer) {
+        direction = -1;
+      }
+
+      // Reverse at left end
+      if (gallery.scrollLeft <= buffer) {
+        direction = 1;
+      }
+    }, delay);
+  });
+</script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const videoGallery = document.querySelector(".video-gallery");
+    const totalVideos = 11;
+    const folder = "trailers/";
+    const extension = ".mp4";
+
+    for (let i = 1; i <= totalVideos; i++) {
+      const number = i.toString().padStart(2, '0');
+      const videoName = `trailer${number}${extension}`;
+
+      const div = document.createElement("div");
+      div.classList.add("game-video");
+
+      const video = document.createElement("video");
+      video.setAttribute("width", "300");
+      video.setAttribute("height", "200");
+      video.setAttribute("controls", "true");
+
+      const source = document.createElement("source");
+      source.src = folder + videoName;
+      source.type = "video/mp4";
+
+      video.appendChild(source);
+      div.appendChild(video);
+      videoGallery.appendChild(div);
+
+      // 🟢 Attach click event to open the lightbox
+      div.addEventListener("click", function () {
+        openVideoLightbox(this);
+      });
+    }
+  });
+</script>
+
+
+
+<script>
+  function openVideoLightbox(element) {
+    const videoSrc = element.querySelector("source").src;
+    const lightbox = document.getElementById("video-lightbox");
+    const lightboxVideo = document.getElementById("lightbox-video");
+
+    lightboxVideo.src = videoSrc;
+    lightbox.style.display = "flex";
+
+    setTimeout(() => {
+      lightboxVideo.style.transform = "scale(1)";
+    }, 50);
+  }
+
+  function closeVideoLightbox() {
+    const lightbox = document.getElementById("video-lightbox");
+    const lightboxVideo = document.getElementById("lightbox-video");
+
+    lightbox.style.display = "none";
+    lightboxVideo.pause();
+    lightboxVideo.src = "";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".game-video").forEach(div => {
+      div.addEventListener("click", function () {
+        openVideoLightbox(this);
+      });
+    });
+  });
+</script>
+
+<script>
+  function openVideoLightbox(element) {
+    const source = element.querySelector("source");
+    const videoSrc = source ? source.src : '';
+    const lightbox = document.getElementById("video-lightbox");
+    const lightboxVideo = document.getElementById("lightbox-video");
+
+    lightboxVideo.src = videoSrc;
+    lightboxVideo.load();  // Reset the video
+    lightboxVideo.play();  // Auto play in lightbox
+    lightbox.style.display = "flex";
+  }
+
+  function closeVideoLightbox() {
+    const lightbox = document.getElementById("video-lightbox");
+    const lightboxVideo = document.getElementById("lightbox-video");
+
+    lightbox.style.display = "none";
+    lightboxVideo.pause();
+    lightboxVideo.src = "";
+  }
+
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll(".game-video").forEach(div => {
+      div.addEventListener("click", function () {
+        openVideoLightbox(this);
+      });
+    });
+  });
+</script>
+
+<!-- Video Lightbox Modal -->
+<div id="video-lightbox" class="lightbox" onclick="closeVideoLightbox()">
+  <div class="lightbox-content">
+    <video id="lightbox-video" controls autoplay></video>
+  </div>
+</div>
+
+
+
+
+
+
+</body>
+</html>

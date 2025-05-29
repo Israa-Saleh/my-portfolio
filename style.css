@@ -1,0 +1,391 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e1e;
+  color: #e0e0e0; /* Light gray for body text */
+}
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  color: #00ffff; /* Cyan for headings */
+}
+
+a {
+  color: #00ffff; /* Cyan for links */
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+/* Header */
+header {
+  background: #121212;
+  color: #fff;
+  padding: 40px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 3em;
+  animation: glow 2s infinite alternate;
+}
+
+header p {
+  margin: 10px 0 0;
+  font-size: 1.2em;
+  color: #00ffff; /* Cyan for header subtitle */
+}
+
+nav a {
+  color: #00ffff; /* Cyan for nav links */
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 1.1em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #fff; /* White on hover */
+}
+
+/* Sections */
+section {
+  padding: 40px 0;
+}
+
+h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ffff; /* Cyan for section borders */
+  padding-bottom: 10px;
+}
+
+/* Projects */
+.project {
+  background: #2a2a2a;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5); /* Cyan for hover effect */
+}
+
+.project h3 {
+  margin-top: 0;
+  color: #00ffff; /* Cyan for project titles */
+}
+
+.project img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+/* Game Gallery */
+#game-gallery {
+  padding: 40px 0;
+  background-color: #1e1e1e;
+}
+
+#game-gallery h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ffff; /* Cyan for section borders */
+  padding-bottom: 10px;
+  color: #00ffff;
+}
+
+/* Gallery wrapper to position the arrows */
+.gallery-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Arrow buttons */
+.arrow {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  border: none;
+  font-size: 2.5em;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%; /* Circular buttons */
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Shadow for a floating effect */
+}
+
+/* Left and Right Arrows */
+.left-arrow {
+  left: 10px; /* Position the left arrow */
+}
+
+.right-arrow {
+  right: 10px; /* Position the right arrow */
+}
+
+/* Hover Effect: Scale and Background Color Change */
+.arrow:hover {
+  background-color: #00ffff; /* Cyan background on hover */
+  transform: translateY(-50%) scale(1.2); /* Increase size on hover */
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.7); /* Glowing cyan effect */
+}
+
+/* Gallery */
+.gallery {
+  display: flex;
+  overflow-x: auto; /* Enables horizontal scrolling */
+  gap: 20px; /* Space between images */
+  scroll-snap-type: x mandatory; /* Ensures smooth scrolling */
+  scroll-behavior: smooth; /* Smooth scrolling */
+  width: 100%;
+}
+
+.game-image {
+  flex: 0 0 auto; /* Prevents images from shrinking */
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  cursor: pointer;
+  
+}
+
+.game-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 255, 255, 0.5); /* Cyan for hover effect */
+}
+
+.game-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image aspect ratio is maintained */
+  border-radius: 10px;
+}
+
+/* Optional: Hide horizontal scrollbar but still allow scrolling */
+.gallery::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+}
+
+.gallery::-webkit-scrollbar-thumb {
+  background-color: #00ffff; /* Cyan for the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.gallery::-webkit-scrollbar-track {
+  background-color: #333; /* Dark background for the scrollbar track */
+}
+
+/* Skills */
+#skills ul {
+  list-style: none;
+  padding: 0;
+}
+
+#skills li {
+  background: #2a2a2a;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  color: #e0e0e0; /* Light gray for skills text */
+}
+
+/* Contact */
+#contact ul {
+  list-style: none;
+  padding: 0;
+}
+
+#contact li {
+  margin-bottom: 10px;
+  color: #e0e0e0; /* Light gray for contact text */
+}
+
+/* Footer */
+footer {
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* Animations */
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 20px #00ffff;
+  }
+  to {
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #00ffff, 0 0 40px #00ffff;
+  }
+}
+
+/* Lightbox Styles */
+.lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  padding: 20px; /* Ensure there's space around the image */
+}
+
+.lightbox-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.lightbox img {
+  width: 500px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 10px;
+  background: #000;
+  transition: transform 0.3s ease;
+  transform: scale(1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Game Trailers Section */
+#video-gallery {
+  padding: 40px 0;
+  background-color: #1e1e1e;
+}
+
+#video-gallery h2 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #00ffff; /* Cyan for section borders */
+  padding-bottom: 10px;
+  color: #00ffff;
+}
+/* Fix lightbox video layout */
+#video-lightbox {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.9);
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+#video-lightbox .lightbox-content {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox-video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background: black;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.3);
+}
+
+/* Gallery wrapper to position the arrows */
+.video-gallery-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Video Gallery */
+.video-gallery {
+  display: flex;
+  gap: 20px; /* Space between videos */
+  width: 100%;
+  overflow-x: auto; /* Enables horizontal scrolling */
+}
+
+.game-video {
+  flex: 0 0 auto;
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.game-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Optional: Hide horizontal scrollbar but still allow scrolling */
+.video-gallery::-webkit-scrollbar {
+  height: 8px; /* Height of the scrollbar */
+}
+
+.video-gallery::-webkit-scrollbar-thumb {
+  background-color: #00ffff; /* Cyan for the scrollbar thumb */
+  border-radius: 10px;
+}
+
+.video-gallery::-webkit-scrollbar-track {
+  background-color: #333; /* Dark background for the scrollbar track */
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cert-badge {
+  width: 100px; /* Adjust the size */
+  height: auto;
+  border-radius: 6px;
+}
+
